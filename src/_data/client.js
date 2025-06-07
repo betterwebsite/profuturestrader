@@ -1,14 +1,14 @@
 module.exports = {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
-    "phoneForTel": "555-779-4407",
-    "phoneFormatted": "(555) 779-4407",
+    "name": "Pro Futures Trader",
+    "email": "",
+    "phoneForTel": "949-996-4611",
+    "phoneFormatted": "(949) 996-4611",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
-        "zip": "80206",
+        "city": "City",
+        "state": "State",
+        "zip": "Zip",
         "country": "US",
         "mapLink": "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6"
     },
