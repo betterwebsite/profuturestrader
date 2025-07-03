@@ -1,0 +1,916 @@
+---
+title: 'Trading_hours | ProFuturesTrader'
+description: 'ProFuturesTrader offers transparent, risk-based futures margin requirements—including initial, maintenance, and intraday rates—tailored for both retail and institutional traders.'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'market-trading-hours/'
+eleventyNavigation:
+    key: Market Trading Hours
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <!-- Add the provided styles here -->
+         <link rel="stylesheet" href="/assets/css/trading_hours.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<!-- <div id="banner-1018">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <img class="cs-icon" decoding="async" src="/assets/svgs/open.svg" alt="divider" width="181" height="36" aria-hidden="true">
+        </picture>
+        <h1 class="cs-int-title">Futures Trading Hours</h1>
+        <p class="cs-text">
+            Complete trading hours for major futures markets worldwide. All times shown in Eastern Time (ET). Markets operate on electronic trading platforms with extended hours for maximum global accessibility.
+        </p>
+    </div>
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Ftable.jpg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Ftable.jpg">
+        <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Ftable.jpg" alt="trading floor" width="1920" height="1000">
+    </picture>
+</div> -->
+
+<!-- ============================================ -->
+<!--                  Menu Group                  -->
+<!-- ============================================ -->
+
+<div id="cs-menu-group-1018">
+    <div class="cs-container">
+        <div class="cs-button-group">
+            <button class="cs-button cs-active" data-filter="one">
+                Currencies
+            </button>
+            <button class="cs-button" data-filter="two">
+                Energies
+            </button>
+            <button class="cs-button" data-filter="three">
+                Financials
+            </button>
+            <button class="cs-button" data-filter="four">
+                Grains
+            </button>
+            <button class="cs-button" data-filter="five">
+                Indices
+            </button>
+            <button class="cs-button" data-filter="six">
+                Meats
+            </button>
+            <button class="cs-button" data-filter="seven">
+                Metals
+            </button>
+            <button class="cs-button" data-filter="eight">
+                Softs
+            </button>
+        </div>
+
+        <!--Currencies-->
+        <div id="cs-menu1-1018" class="cs-menu-group" data-category="one">
+            <!--Currencies Section 1-->
+            <section class="cs-menu">
+                <div class="cs-content">
+                    <h2 class="cs-title">Currency Futures</h2>
+                    <p class="cs-text">
+                        Global currency futures including major pairs, emerging markets, and micro contracts. Most currency futures trade nearly 24 hours from Sunday evening to Friday afternoon.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Open Day</th>
+                            <th>Open Time</th>
+                            <th>Close Day</th>
+                            <th>Close Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/australian-dollar_contract_specifications.html" target="_blank">Aussie Dollar</a></td>
+                            <td data-label="Symbol" class="symbol">6A</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/fx/g10/australian-dollar-japanese-yen_contract_specifications.html" target="_blank">Australian Dollar/Japanese Yen</a></td>
+                            <td data-label="Symbol" class="symbol">AJY</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/emerging-market/brazilian-real_contract_specifications.html" target="_blank">Brazilian Real</a></td>
+                            <td data-label="Symbol" class="symbol">6L</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/british-pound_contract_specifications.html" target="_blank">British Pound</a></td>
+                            <td data-label="Symbol" class="symbol">6B</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/canadian-dollar_contract_specifications.html" target="_blank">Canadian Dollar</a></td>
+                            <td data-label="Symbol" class="symbol">6C</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/euro-fx_contract_specifications.html" target="_blank">Euro FX</a></td>
+                            <td data-label="Symbol" class="symbol">6E</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/japanese-yen_contract_specifications.html" target="_blank">Japanese Yen</a></td>
+                            <td data-label="Symbol" class="symbol">6J</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/swiss-franc_contract_specifications.html" target="_blank">Swiss Franc</a></td>
+                            <td data-label="Symbol" class="symbol">6S</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/194" target="_blank">US Dollar Index</a></td>
+                            <td data-label="Symbol" class="symbol">DX-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">7:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/e-micros/e-micro-euro_contract_specifications.html" target="_blank">Micro EUR/USD</a></td>
+                            <td data-label="Symbol" class="symbol">M6E</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Energies-->
+        <div id="cs-menu2-1018" class="cs-menu-group" data-category="two">
+            <!--Energies Section 1-->
+            <section class="cs-menu cs-menu-style2">
+                <div class="cs-content">
+                    <h2 class="cs-title">Energy Futures</h2>
+                    <p class="cs-text">
+                        Crude oil, natural gas, heating oil, gasoline and other energy products. Energy markets are among the most actively traded futures with extended electronic trading hours.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Open Day</th>
+                            <th>Open Time</th>
+                            <th>Close Day</th>
+                            <th>Close Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/crude-oil/light-sweet-crude_contract_specifications.html" target="_blank">Crude Oil</a></td>
+                            <td data-label="Symbol" class="symbol">GCL</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/crude-oil/emini-crude-oil_contract_specifications.html" target="_blank">E-mini Crude Oil</a></td>
+                            <td data-label="Symbol" class="symbol">QM</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/markets/energy/crude-oil/micro-wti-crude-oil.contractSpecs.html" target="_blank">Micro Crude Oil</a></td>
+                            <td data-label="Symbol" class="symbol">MCL</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">4:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/natural-gas/natural-gas_contract_specifications.html" target="_blank">HH Natural Gas</a></td>
+                            <td data-label="Symbol" class="symbol">GNG</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/natural-gas/emini-natural-gas_contract_specifications.html" target="_blank">Natural Gas miNY</a></td>
+                            <td data-label="Symbol" class="symbol">QG</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/refined-products/heating-oil_contract_specifications.html" target="_blank">Heating Oil</a></td>
+                            <td data-label="Symbol" class="symbol">GHO</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/refined-products/rbob-gasoline_contract_specifications.html" target="_blank">RBOB Gasoline</a></td>
+                            <td data-label="Symbol" class="symbol">GRB</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.ice.com/products/219/Brent-Crude-Futures" target="_blank">ICE Brent Crude</a></td>
+                            <td data-label="Symbol" class="symbol">NSEA-M</td>
+                            <td data-label="Exchange" class="exchange">ICEEU</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">6:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Financials-->
+        <div id="cs-menu3-1018" class="cs-menu-group" data-category="three">
+            <!--Financials Section 1-->
+            <section class="cs-menu">
+                <div class="cs-content">
+                    <h2 class="cs-title">Financial Futures</h2>
+                    <p class="cs-text">
+                        Interest rate futures including Treasury bonds, notes, and bills. SOFR futures and international government bonds. Critical instruments for hedging interest rate risk.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Open Day</th>
+                            <th>Open Time</th>
+                            <th>Close Day</th>
+                            <th>Close Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/us-treasury/2-year-us-treasury-note_contract_specifications.html" target="_blank">2 Yr US T-Note</a></td>
+                            <td data-label="Symbol" class="symbol">ZT</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/us-treasury/5-year-us-treasury-note_contract_specifications.html" target="_blank">5 Yr T-Note</a></td>
+                            <td data-label="Symbol" class="symbol">ZF</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/us-treasury/10-year-us-treasury-note_contract_specifications.html" target="_blank">10 Yr US T-Note</a></td>
+                            <td data-label="Symbol" class="symbol">ZN</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/us-treasury/30-year-us-treasury-bond_contract_specifications.html" target="_blank">30 Yr US T-Bonds</a></td>
+                            <td data-label="Symbol" class="symbol">ZB</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/us-treasury/ultra-10-year-us-treasury-note_contract_specifications.html" target="_blank">Ultra 10-Year Note</a></td>
+                            <td data-label="Symbol" class="symbol">TN</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/interest-rates/us-treasury/ultra-t-bond_contract_specifications.html" target="_blank">Ultra T-Bond</a></td>
+                            <td data-label="Symbol" class="symbol">UB</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.eurex.com/ex-en/markets/int/fix/government-bonds/Euro-Bund-Futures-137298" target="_blank">EuroBund</a></td>
+                            <td data-label="Symbol" class="symbol">FGBL</td>
+                            <td data-label="Exchange" class="exchange">EUREX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">7:15 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">3:05 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/stir/three-month-sofr_contract_specifications.html" target="_blank">Three-Month SOFR</a></td>
+                            <td data-label="Symbol" class="symbol">SR3</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Grains-->
+        <div id="cs-menu4-1018" class="cs-menu-group" data-category="four">
+            <!--Grains Section 1-->
+            <section class="cs-menu cs-menu-style2">
+                <div class="cs-content">
+                    <h2 class="cs-title">Grain & Oilseed Futures</h2>
+                    <p class="cs-text">
+                        Agricultural futures including corn, soybeans, wheat, and related products. Essential for farmers, processors, and traders managing agricultural commodity risk.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Open Day</th>
+                            <th>Open Time</th>
+                            <th>Close Day</th>
+                            <th>Close Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/grain-and-oilseed/corn_contract_specifications.html" target="_blank">Corn</a></td>
+                            <td data-label="Symbol" class="symbol">ZC</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">7:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">1:20 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/grain-and-oilseed/soybean_contract_specifications.html" target="_blank">Soybeans</a></td>
+                            <td data-label="Symbol" class="symbol">ZS</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">7:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">1:20 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/grain-and-oilseed/wheat_contract_specifications.html" target="_blank">Wheat</a></td>
+                            <td data-label="Symbol" class="symbol">ZW</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">7:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">1:20 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/grain-and-oilseed/soybean-oil_contract_specifications.html" target="_blank">Soybean Oil</a></td>
+                            <td data-label="Symbol" class="symbol">ZL</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">7:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">1:20 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/agricultural/grain-and-oilseed/soybean-meal_contract_specifications.html" target="_blank">Soymeal</a></td>
+                            <td data-label="Symbol" class="symbol">ZM</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">7:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">1:20 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/grain-and-oilseed/oats_contract_specifications.html" target="_blank">Oats</a></td>
+                            <td data-label="Symbol" class="symbol">ZO</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">7:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">1:20 PM</td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/agricultural/grain-and-oilseed/rough-rice_contract_specifications.html" target="_blank">Rough Rice</a></td>
+                            <td data-label="Symbol" class="symbol">ZR</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">7:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">1:20 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/markets/agriculture/grains/micro-corn.contractSpecs.html" target="_blank">Micro Corn</a></td>
+                            <td data-label="Symbol" class="symbol">MZC</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">7:00 PM</td>
+                            <td data-label="Close Day">Sunday</td>
+                            <td data-label="Close Time" class="time">1:20 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Indices-->
+        <div id="cs-menu5-1018" class="cs-menu-group" data-category="five">
+            <!--Indices Section 1-->
+            <section class="cs-menu">
+                <div class="cs-content">
+                    <h2 class="cs-title">Index Futures</h2>
+                    <p class="cs-text">
+                        Stock index futures including S&P 500, NASDAQ, Dow Jones, and international indices. Essential tools for portfolio hedging and speculation on broad market movements.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Open Day</th>
+                            <th>Open Time</th>
+                            <th>Close Day</th>
+                            <th>Close Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/equity-index/us-index/e-mini-sandp500_contract_specifications.html" target="_blank">E-Mini S&P 500</a></td>
+                            <td data-label="Symbol" class="symbol">ES</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/equity-index/us-index/e-mini-nasdaq-100_contract_specifications.html" target="_blank">E-Mini NASDAQ 100</a></td>
+                            <td data-label="Symbol" class="symbol">NQ</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/equity-index/us-index/e-mini-dow_contract_specifications.html" target="_blank">E-Mini Dow</a></td>
+                            <td data-label="Symbol" class="symbol">YM</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/equity-index/us-index/e-mini-russell-2000_contract_specifications.html" target="_blank">E-mini Russell 2000</a></td>
+                            <td data-label="Symbol" class="symbol">RTY</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/equity-index/us-index/micro-e-mini-sandp-500_contract_specifications.html" target="_blank">Micro E-mini S&P 500</a></td>
+                            <td data-label="Symbol" class="symbol">MES</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/equity-index/us-index/micro-e-mini-nasdaq-100_contract_specifications.html" target="_blank">Micro E-mini Nasdaq-100</a></td>
+                            <td data-label="Symbol" class="symbol">MNQ</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/equity-index/us-index/bitcoin_contract_specifications.html" target="_blank">CME Bitcoin Futures</a></td>
+                            <td data-label="Symbol" class="symbol">BTC</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/equity-index/us-index/ether_contract_specifications.html" target="_blank">CME Ether Futures</a></td>
+                            <td data-label="Symbol" class="symbol">ETH</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cboe.com/tradable_products/vix/vix_futures/" target="_blank">CBOE Volatility Index</a></td>
+                            <td data-label="Symbol" class="symbol">VX</td>
+                            <td data-label="Exchange" class="exchange">CFE</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.eurex.com/ex-en/markets/idx/dax/DAX-Futures-139902" target="_blank">DAX</a></td>
+                            <td data-label="Symbol" class="symbol">FDAX</td>
+                            <td data-label="Exchange" class="exchange">EUREX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">7:15 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">3:05 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Meats-->
+        <div id="cs-menu6-1018" class="cs-menu-group" data-category="six">
+            <!--Meats Section 1-->
+            <section class="cs-menu cs-menu-style2">
+                <div class="cs-content">
+                    <h2 class="cs-title">Livestock Futures</h2>
+                    <p class="cs-text">
+                        Livestock and meat futures including live cattle, feeder cattle, and lean hogs. Critical markets for meat producers, processors, and food service companies.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Open Day</th>
+                            <th>Open Time</th>
+                            <th>Close Day</th>
+                            <th>Close Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/livestock/live-cattle_contract_specifications.html" target="_blank">Live Cattle</a></td>
+                            <td data-label="Symbol" class="symbol">LE</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Monday</td>
+                            <td data-label="Open Time" class="time">8:30 AM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">1:05 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/livestock/feeder-cattle_contract_specifications.html" target="_blank">Feeder Cattle</a></td>
+                            <td data-label="Symbol" class="symbol">GF</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Monday</td>
+                            <td data-label="Open Time" class="time">8:30 AM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">1:05 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/livestock/lean-hogs_contract_specifications.html" target="_blank">Lean Hogs</a></td>
+                            <td data-label="Symbol" class="symbol">HE</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Monday</td>
+                            <td data-label="Open Time" class="time">8:30 AM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">1:05 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/agricultural/livestock/pork-cutout_contract_specifications.html" target="_blank">Pork Cutout Futures</a></td>
+                            <td data-label="Symbol" class="symbol">PRK</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Monday</td>
+                            <td data-label="Open Time" class="time">8:30 AM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">1:05 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Metals-->
+        <div id="cs-menu7-1018" class="cs-menu-group" data-category="seven">
+            <!--Metals Section 1-->
+            <section class="cs-menu">
+                <div class="cs-content">
+                    <h2 class="cs-title">Metal Futures</h2>
+                    <p class="cs-text">
+                        Precious metals (gold, silver, platinum, palladium) and base metals (copper). Popular safe-haven assets and industrial commodity hedging instruments.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Open Day</th>
+                            <th>Open Time</th>
+                            <th>Close Day</th>
+                            <th>Close Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/gold_contract_specifications.html" target="_blank">Gold</a></td>
+                            <td data-label="Symbol" class="symbol">GGC</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/silver_contract_specifications.html" target="_blank">Silver</a></td>
+                            <td data-label="Symbol" class="symbol">GSI</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/platinum_contract_specifications.html" target="_blank">Platinum</a></td>
+                            <td data-label="Symbol" class="symbol">GPL</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/palladium_contract_specifications.html" target="_blank">Palladium</a></td>
+                            <td data-label="Symbol" class="symbol">GPA</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/base/copper_contract_specifications.html" target="_blank">Copper</a></td>
+                            <td data-label="Symbol" class="symbol">GHG</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/e-mini-gold_contract_specifications.html" target="_blank">miNY Gold</a></td>
+                            <td data-label="Symbol" class="symbol">QO</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/e-mini-silver_contract_specifications.html" target="_blank">miNY Silver</a></td>
+                            <td data-label="Symbol" class="symbol">QI</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/e-micro-gold_contract_specifications.html" target="_blank">E-micro Gold</a></td>
+                            <td data-label="Symbol" class="symbol">MGC</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Softs-->
+        <div id="cs-menu8-1018" class="cs-menu-group" data-category="eight">
+            <!--Softs Section 1-->
+            <section class="cs-menu cs-menu-style2">
+                <div class="cs-content">
+                    <h2 class="cs-title">Soft Commodities</h2>
+                    <p class="cs-text">
+                        Agricultural soft commodities including coffee, cocoa, sugar, cotton, and dairy products. Global commodity markets essential for food and beverage industries.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Open Day</th>
+                            <th>Open Time</th>
+                            <th>Close Day</th>
+                            <th>Close Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/15" target="_blank">Coffee</a></td>
+                            <td data-label="Symbol" class="symbol">KC-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Open Day">Monday</td>
+                            <td data-label="Open Time" class="time">3:15 AM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">12:30 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/7" target="_blank">Cocoa</a></td>
+                            <td data-label="Symbol" class="symbol">CC-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Open Day">Monday</td>
+                            <td data-label="Open Time" class="time">3:45 AM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">12:30 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/23" target="_blank">Sugar No. 11</a></td>
+                            <td data-label="Symbol" class="symbol">SB-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Open Day">Monday</td>
+                            <td data-label="Open Time" class="time">2:30 AM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">12:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/254/Cotton-No-2-Futures" target="_blank">Cotton No.2</a></td>
+                            <td data-label="Symbol" class="symbol">CT-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">8:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">1:20 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/30" target="_blank">Frozen OJ</a></td>
+                            <td data-label="Symbol" class="symbol">OJ-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Open Day">Monday</td>
+                            <td data-label="Open Time" class="time">7:00 AM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">1:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/dairy/class-iii-milk_contract_specifications.html" target="_blank">Class III Milk</a></td>
+                            <td data-label="Symbol" class="symbol">DA</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/markets/agriculture/lumber-and-softs/lumber.contractSpecs.html" target="_blank">Lumber Futures</a></td>
+                            <td data-label="Symbol" class="symbol">LBR</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">9:00 AM</td>
+                            <td data-label="Close Day">Sunday</td>
+                            <td data-label="Close Time" class="time">3:05 PM</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/markets/agriculture/dairy/nonfat-dry-milk.contractSpecs.html" target="_blank">Nonfat Dry Milk</a></td>
+                            <td data-label="Symbol" class="symbol">NF</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Open Day">Sunday</td>
+                            <td data-label="Open Time" class="time">5:00 PM</td>
+                            <td data-label="Close Day">Friday</td>
+                            <td data-label="Close Time" class="time">4:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+</div>
+
+<script>
+class CS_MenuFilter {
+    filtersSelector = '.cs-button'
+    menuSelector = '.cs-menu-group'
+    activeClass = 'cs-active'
+    hiddenClass = 'cs-hidden'
+    
+    constructor() {
+        this.$menus = document.querySelectorAll(this.menuSelector)
+        const $filters = document.querySelectorAll(this.filtersSelector)
+        this.onClick($filters[0])
+        for (const $filter of $filters) {
+            $filter.addEventListener('click', () => this.onClick($filter))
+        }
+    }
+    
+    onClick($filter) {
+        this.filter($filter.dataset.filter)
+        const { activeClass } = this
+        this.$activeFilter?.classList.remove(activeClass)
+        $filter.classList.add(activeClass)
+        this.$activeFilter = $filter
+    }
+    
+    filter(filter) {
+        const showAll = filter == 'all'
+        const { hiddenClass } = this
+        for (const $menu of this.$menus) {
+            const show = showAll || $menu.dataset.category == filter
+            $menu.classList.toggle(hiddenClass, !show)
+        }
+    }
+}
+
+new CS_MenuFilter()
+</script>
+
+{% include 'components/cta.html' %}
+
+{% endblock %}

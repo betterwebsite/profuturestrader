@@ -59,28 +59,28 @@
             <div class="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                     <li class="cs-li">
-                        <a href="" class="cs-li-link cs-active">
+                        <a href="" class="cs-li-link {{ 'cs-active' if '' == page.fileSlug }}">
                             Home
                         </a>
                     </li>
                     <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                     <li class="cs-li cs-dropdown" tabindex="0">
-                        <span class="cs-li-link">
+                        <span class="cs-li-link {{ 'cs-active' if 'automated_systems' == page.fileSlug }} {{ 'cs-active' if 'margins' == page.fileSlug }} {{ 'cs-active' if 'trading_hours' == page.fileSlug }} {{ 'cs-active' if 'contract_specification' == page.fileSlug }}" >
                             Services
                             <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-green.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
                         </span>
                         <ul class="cs-drop-ul">
                             <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Automated Systems</a>
+                                <a href="/automated_systems" class="cs-li-link cs-drop-link">Automated Systems</a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Margins</a>
+                                <a href="/margins" class="cs-li-link cs-drop-link">Margins</a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Trading Hours</a>
+                                <a href="/market-trading-hours" class="cs-li-link cs-drop-link">Trading Hours</a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Contract Specification</a>
+                                <a href="/contract-specification" class="cs-li-link cs-drop-link">Contract Specification</a>
                             </li>
                             <li class="cs-drop-li">
                                 <a href="" class="cs-li-link cs-drop-link">Platform Education</a>

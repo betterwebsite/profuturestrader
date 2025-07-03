@@ -1,0 +1,974 @@
+---
+title: 'Contract Specifications | ProFuturesTrader'
+description: 'ProFuturesTrader offers comprehensive futures contract specifications including size, months, and tick values for all major futures markets—tailored for both retail and institutional traders.'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'contract-specification/'
+eleventyNavigation:
+    key: Contract Specifications
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <!-- Add the provided styles here -->
+         <link rel="stylesheet" href="/assets/css/trading_hours.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                  Menu Group                  -->
+<!-- ============================================ -->
+
+<div id="cs-menu-group-1018">
+    <div class="cs-container">
+        <div class="cs-button-group">
+            <button class="cs-button cs-active" data-filter="one">
+                Currencies
+            </button>
+            <button class="cs-button" data-filter="two">
+                Energies
+            </button>
+            <button class="cs-button" data-filter="three">
+                Financials
+            </button>
+            <button class="cs-button" data-filter="four">
+                Grains
+            </button>
+            <button class="cs-button" data-filter="five">
+                Indices
+            </button>
+            <button class="cs-button" data-filter="six">
+                Meats
+            </button>
+            <button class="cs-button" data-filter="seven">
+                Metals
+            </button>
+            <button class="cs-button" data-filter="eight">
+                Softs
+            </button>
+        </div>
+
+        <!--Currencies-->
+        <div id="cs-menu1-1018" class="cs-menu-group" data-category="one">
+            <!--Currencies Section 1-->
+            <section class="cs-menu">
+                <div class="cs-content">
+                    <h2 class="cs-title">Currency Futures</h2>
+                    <p class="cs-text">
+                        Global currency futures including major pairs, emerging markets, and micro contracts. Essential instruments for currency hedging and speculation across international markets.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Size</th>
+                            <th>Month</th>
+                            <th>Tick</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/australian-dollar_contract_specifications.html" target="_blank">Aussie Dollar</a></td>
+                            <td data-label="Symbol" class="symbol">6A</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">100000 AUD</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.00005 / $5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/fx/g10/australian-dollar-japanese-yen_contract_specifications.html" target="_blank">Australian Dollar/Japanese Yen</a></td>
+                            <td data-label="Symbol" class="symbol">AJY</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">200000 AUD</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.01 / ¥2000</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/emerging-market/brazilian-real_contract_specifications.html" target="_blank">Brazilian Real</a></td>
+                            <td data-label="Symbol" class="symbol">6L</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">100000 BRL</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.00005 / $5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/british-pound_contract_specifications.html" target="_blank">British Pound</a></td>
+                            <td data-label="Symbol" class="symbol">6B</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">62500 GBP</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.0001 / $6.25</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/british-pound-japanese-yen_contract_specifications.html" target="_blank">British Pound/Japanese Yen</a></td>
+                            <td data-label="Symbol" class="symbol">PJY</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">125000 GBP</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.01 / ¥1250</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/canadian-dollar_contract_specifications.html" target="_blank">Canadian Dollar</a></td>
+                            <td data-label="Symbol" class="symbol">6C</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">100000 CAD</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.00005 / $5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/e-mini-euro-fx_contract_specifications.html" target="_blank">E-Mini Euro FX</a></td>
+                            <td data-label="Symbol" class="symbol">E7</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">62500 EUR</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.0001 / $6.25</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/e-mini-japanese-yen_contract_specifications.html" target="_blank">E-mini Japanese Yen</a></td>
+                            <td data-label="Symbol" class="symbol">J7</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">6250000 JPY</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.000001 / $6.25</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/euro-fx_contract_specifications.html" target="_blank">Euro FX</a></td>
+                            <td data-label="Symbol" class="symbol">6E</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">125000 EUR</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.00005 / $6.25</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/euro-fx-british-pound_contract_specifications.html" target="_blank">Euro/British Pound</a></td>
+                            <td data-label="Symbol" class="symbol">RP</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">125000 EUR</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.00005 / £6.25</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/euro-fx-japanese-yen_contract_specifications.html" target="_blank">Euro/Japanese Yen</a></td>
+                            <td data-label="Symbol" class="symbol">RY</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">125000 EUR</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.01 / ¥1250</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/euro-fx-swiss-franc_contract_specifications.html" target="_blank">Euro/Swiss Franc</a></td>
+                            <td data-label="Symbol" class="symbol">RF</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">125000 EUR</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.0001 / CHF12.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/emerging-market/indian-rupee_contract_specifications.html" target="_blank">Indian Rupee/USD</a></td>
+                            <td data-label="Symbol" class="symbol">SIR</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">500 INR</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.01 / $5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/japanese-yen_contract_specifications.html" target="_blank">Japanese Yen</a></td>
+                            <td data-label="Symbol" class="symbol">6J</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">12500000 JPY</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.0000005 / $6.25</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/emerging-market/korean-won_contract_specifications.html" target="_blank">Korean Won</a></td>
+                            <td data-label="Symbol" class="symbol">KRW</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">125000000 KRW</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.0000001 / $12.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/emerging-market/mexican-peso_contract_specifications.html" target="_blank">Mexican Peso</a></td>
+                            <td data-label="Symbol" class="symbol">6M</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">500000 MXN</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.00001 / $5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/e-micros/e-micro-australian-dollar_contract_specifications.html" target="_blank">Micro AUD/USD</a></td>
+                            <td data-label="Symbol" class="symbol">M6A</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">10000 AUD</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.0001 / $1</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/markets/fx/g10/e-micro-canadian-dollar-us-dollar.contractSpecs.html" target="_blank">Micro CAD/USD</a></td>
+                            <td data-label="Symbol" class="symbol">MCD</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">10000 CAD</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.0001 / $1</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/markets/fx/g10/e-micro-swiss-franc-us-dollar.contractSpecs.html" target="_blank">Micro CHF/USD</a></td>
+                            <td data-label="Symbol" class="symbol">MSF</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">12500 CHF</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.0001 / $1.25</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/e-micros/e-micro-euro_contract_specifications.html" target="_blank">Micro EUR/USD</a></td>
+                            <td data-label="Symbol" class="symbol">M6E</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">12500 EUR</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.0001 / $1.25</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/e-micros/e-micro-british-pound_contract_specifications.html" target="_blank">Micro GBP/USD</a></td>
+                            <td data-label="Symbol" class="symbol">M6B</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">6250 GBP</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.0001 / $0.625</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/e-micros/e-micro-indian-rupee_contract_specifications.html" target="_blank">Micro INR/USD</a></td>
+                            <td data-label="Symbol" class="symbol">MIR</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">100 INR</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.01 / $1</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/new-zealand-dollar_contract_specifications.html" target="_blank">New Zealand Dollar</a></td>
+                            <td data-label="Symbol" class="symbol">6N</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">100000 NZD</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.00005 / $5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/fx/emerging-market/russian-ruble_contract_specifications.html" target="_blank">Russian Ruble</a></td>
+                            <td data-label="Symbol" class="symbol">6R</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">2500000 RUB</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.000005 / $12.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/emerging-market/south-african-rand_contract_specifications.html" target="_blank">South African Rand</a></td>
+                            <td data-label="Symbol" class="symbol">6Z</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">500000 ZAR</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.000025 / $12.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/swedish-krona_contract_specifications.html" target="_blank">Swedish Krona</a></td>
+                            <td data-label="Symbol" class="symbol">SEK</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">2000000 SEK</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.00001 / $20</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/swiss-franc_contract_specifications.html" target="_blank">Swiss Franc</a></td>
+                            <td data-label="Symbol" class="symbol">6S</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">125000 CHF</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.00005 / $6.25</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/194" target="_blank">US Dollar Index</a></td>
+                            <td data-label="Symbol" class="symbol">DX-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Size">1000 x Index Value</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.005 / $5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Energies-->
+        <div id="cs-menu2-1018" class="cs-menu-group" data-category="two">
+            <!--Energies Section 1-->
+            <section class="cs-menu cs-menu-style2">
+                <div class="cs-content">
+                    <h2 class="cs-title">Energy Futures</h2>
+                    <p class="cs-text">
+                        Crude oil, natural gas, heating oil, gasoline and other energy products. Energy markets are among the most actively traded futures with comprehensive contract specifications.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Size</th>
+                            <th>Month</th>
+                            <th>Tick</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/crude-oil/brent-crude-oil-last-day_contract_specifications.html" target="_blank">Brent Last Day Financial</a></td>
+                            <td data-label="Symbol" class="symbol">BZ</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Size">1000 barrels</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.01 / $10</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/crude-oil/light-sweet-crude_contract_specifications.html" target="_blank">Crude Oil</a></td>
+                            <td data-label="Symbol" class="symbol">GCL</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Size">1000 barrels</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.01 / $10</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/crude-oil/emini-crude-oil_contract_specifications.html" target="_blank">E-mini Crude Oil</a></td>
+                            <td data-label="Symbol" class="symbol">QM</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Size">500 barrels</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.025 / $12.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/markets/energy/crude-oil/micro-wti-crude-oil.contractSpecs.html" target="_blank">Micro Crude Oil</a></td>
+                            <td data-label="Symbol" class="symbol">MCL</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Size">100 barrels</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.01 / $1</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/natural-gas/natural-gas_contract_specifications.html" target="_blank">HH Natural Gas</a></td>
+                            <td data-label="Symbol" class="symbol">GNG</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Size">10000 mmBtu</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.001 / $10</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/natural-gas/emini-natural-gas_contract_specifications.html" target="_blank">Natural Gas miNY</a></td>
+                            <td data-label="Symbol" class="symbol">QG</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Size">2500 mmBtu</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.005 / $12.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/refined-products/heating-oil_contract_specifications.html" target="_blank">Heating Oil</a></td>
+                            <td data-label="Symbol" class="symbol">GHO</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Size">42000 gallons</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.0001 / $4.2</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/refined-products/rbob-gasoline_contract_specifications.html" target="_blank">RBOB Gasoline</a></td>
+                            <td data-label="Symbol" class="symbol">GRB</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Size">42000 gallons</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.0001 / $4.2</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.ice.com/products/219/Brent-Crude-Futures" target="_blank">ICE Brent Crude</a></td>
+                            <td data-label="Symbol" class="symbol">NSEA-M</td>
+                            <td data-label="Exchange" class="exchange">ICEEU</td>
+                            <td data-label="Size">1000 barrels</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.01 / $10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Financials-->
+        <div id="cs-menu3-1018" class="cs-menu-group" data-category="three">
+            <!--Financials Section 1-->
+            <section class="cs-menu">
+                <div class="cs-content">
+                    <h2 class="cs-title">Financial Futures</h2>
+                    <p class="cs-text">
+                        Interest rate futures including Treasury bonds, notes, and bills. SOFR futures and international government bonds. Critical instruments for hedging interest rate risk.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Size</th>
+                            <th>Month</th>
+                            <th>Tick</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/us-treasury/2-year-us-treasury-note_contract_specifications.html" target="_blank">2 Yr US T-Note</a></td>
+                            <td data-label="Symbol" class="symbol">ZT</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Size">20000 USD</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.00390625 / $78.125</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/us-treasury/5-year-us-treasury-note_contract_specifications.html" target="_blank">5 Yr T-Note</a></td>
+                            <td data-label="Symbol" class="symbol">ZF</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Size">10000 USD</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.0078125 / $78.125</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/us-treasury/10-year-us-treasury-note_contract_specifications.html" target="_blank">10 Yr US T-Note</a></td>
+                            <td data-label="Symbol" class="symbol">ZN</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Size">100000 USD</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.015625 / $1562.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/us-treasury/30-year-us-treasury-bond_contract_specifications.html" target="_blank">30 Yr US T-Bonds</a></td>
+                            <td data-label="Symbol" class="symbol">ZB</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Size">10000 USD</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.03125 / $312.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/us-treasury/ultra-10-year-us-treasury-note_contract_specifications.html" target="_blank">Ultra 10-Year Note</a></td>
+                            <td data-label="Symbol" class="symbol">TN</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Size">100000 USD</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.015625 / $1562.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/interest-rates/us-treasury/ultra-t-bond_contract_specifications.html" target="_blank">Ultra T-Bond</a></td>
+                            <td data-label="Symbol" class="symbol">UB</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Size">100000 USD</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.03125 / $3125</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.eurex.com/ex-en/markets/int/fix/government-bonds/Euro-Bund-Futures-137298" target="_blank">EuroBund</a></td>
+                            <td data-label="Symbol" class="symbol">FGBL</td>
+                            <td data-label="Exchange" class="exchange">EUREX</td>
+                            <td data-label="Size">100000 EUR</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.01 / €1000</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/stir/three-month-sofr_contract_specifications.html" target="_blank">Three-Month SOFR</a></td>
+                            <td data-label="Symbol" class="symbol">SR3</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">2500 x Contract IMM Index</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.0025 / $6.25</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Grains-->
+        <div id="cs-menu4-1018" class="cs-menu-group" data-category="four">
+            <!--Grains Section 1-->
+            <section class="cs-menu cs-menu-style2">
+                <div class="cs-content">
+                    <h2 class="cs-title">Grain & Oilseed Futures</h2>
+                    <p class="cs-text">
+                        Agricultural futures including corn, soybeans, wheat, and related products. Essential for farmers, processors, and traders managing agricultural commodity risk.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Size</th>
+                            <th>Month</th>
+                            <th>Tick</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/grain-and-oilseed/corn_contract_specifications.html" target="_blank">Corn</a></td>
+                            <td data-label="Symbol" class="symbol">ZC</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Size">5000 bushels</td>
+                            <td data-label="Month">HKNUZ</td>
+                            <td data-label="Tick" class="tick">0.0025 / $12.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/grain-and-oilseed/soybean_contract_specifications.html" target="_blank">Soybeans</a></td>
+                            <td data-label="Symbol" class="symbol">ZS</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Size">5000 bushels</td>
+                            <td data-label="Month">FHKNQUX</td>
+                            <td data-label="Tick" class="tick">0.0025 / $12.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/grain-and-oilseed/wheat_contract_specifications.html" target="_blank">Wheat</a></td>
+                            <td data-label="Symbol" class="symbol">ZW</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Size">5000 bushels</td>
+                            <td data-label="Month">HKNUZ</td>
+                            <td data-label="Tick" class="tick">0.0025 / $12.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/grain-and-oilseed/soybean-oil_contract_specifications.html" target="_blank">Soybean Oil</a></td>
+                            <td data-label="Symbol" class="symbol">ZL</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Size">60000 pounds</td>
+                            <td data-label="Month">FHKNQUVZ</td>
+                            <td data-label="Tick" class="tick">0.0001 / $6</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/agricultural/grain-and-oilseed/soybean-meal_contract_specifications.html" target="_blank">Soymeal</a></td>
+                            <td data-label="Symbol" class="symbol">ZM</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Size">100 short tons</td>
+                            <td data-label="Month">FHKNQUVZ</td>
+                            <td data-label="Tick" class="tick">0.1 / $10</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/grain-and-oilseed/oats_contract_specifications.html" target="_blank">Oats</a></td>
+                            <td data-label="Symbol" class="symbol">ZO</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Size">5000 bushels</td>
+                            <td data-label="Month">HKNUZ</td>
+                            <td data-label="Tick" class="tick">0.0025 / $12.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/agricultural/grain-and-oilseed/rough-rice_contract_specifications.html" target="_blank">Rough Rice</a></td>
+                            <td data-label="Symbol" class="symbol">ZR</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Size">2000 cwt</td>
+                            <td data-label="Month">FHKNUX</td>
+                            <td data-label="Tick" class="tick">0.005 / $10</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/markets/agriculture/grains/micro-corn.contractSpecs.html" target="_blank">Micro Corn</a></td>
+                            <td data-label="Symbol" class="symbol">MZC</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Size">500 Bushels</td>
+                            <td data-label="Month">HKNUZ</td>
+                            <td data-label="Tick" class="tick">0.005 / $2.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Indices-->
+        <div id="cs-menu5-1018" class="cs-menu-group" data-category="five">
+            <!--Indices Section 1-->
+            <section class="cs-menu">
+                <div class="cs-content">
+                    <h2 class="cs-title">Index Futures</h2>
+                    <p class="cs-text">
+                        Stock index futures including S&P 500, NASDAQ, Dow Jones, and international indices. Essential tools for portfolio hedging and speculation on broad market movements.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Size</th>
+                            <th>Month</th>
+                            <th>Tick</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/equity-index/us-index/e-mini-sandp500_contract_specifications.html" target="_blank">E-Mini S&P 500</a></td>
+                            <td data-label="Symbol" class="symbol">ES</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">50 X Index Value</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.25 / $12.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/equity-index/us-index/e-mini-nasdaq-100_contract_specifications.html" target="_blank">E-Mini NASDAQ 100</a></td>
+                            <td data-label="Symbol" class="symbol">NQ</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">20 X Index Value</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.25 / $5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/equity-index/us-index/e-mini-dow_contract_specifications.html" target="_blank">E-Mini Dow</a></td>
+                            <td data-label="Symbol" class="symbol">YM</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Size">5 X Index Value</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">1 / $5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/equity-index/us-index/e-mini-russell-2000_contract_specifications.html" target="_blank">E-mini Russell 2000</a></td>
+                            <td data-label="Symbol" class="symbol">RTY</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">50 X Index Value</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.1 / $5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/equity-index/us-index/micro-e-mini-sandp-500_contract_specifications.html" target="_blank">Micro E-mini S&P 500</a></td>
+                            <td data-label="Symbol" class="symbol">MES</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">5 X Index Value</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.25 / $1.25</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/equity-index/us-index/micro-e-mini-nasdaq-100_contract_specifications.html" target="_blank">Micro E-mini Nasdaq-100</a></td>
+                            <td data-label="Symbol" class="symbol">MNQ</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">2 X Index Value</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">0.25 / $0.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/equity-index/us-index/bitcoin_contract_specifications.html" target="_blank">CME Bitcoin Futures</a></td>
+                            <td data-label="Symbol" class="symbol">BTC</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">5 Bitcoin</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">5 / $25</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/equity-index/us-index/ether_contract_specifications.html" target="_blank">CME Ether Futures</a></td>
+                            <td data-label="Symbol" class="symbol">ETH</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">50 Ether</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.5 / $25</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cboe.com/tradable_products/vix/vix_futures/" target="_blank">CBOE Volatility Index</a></td>
+                            <td data-label="Symbol" class="symbol">VX</td>
+                            <td data-label="Exchange" class="exchange">CFE</td>
+                            <td data-label="Size">1000 X Index Value</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.05 / $50</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.eurex.com/ex-en/markets/idx/dax/DAX-Futures-139902" target="_blank">DAX</a></td>
+                            <td data-label="Symbol" class="symbol">FDAX</td>
+                            <td data-label="Exchange" class="exchange">EUREX</td>
+                            <td data-label="Size">25 X Index Value</td>
+                            <td data-label="Month">HMUZ</td>
+                            <td data-label="Tick" class="tick">1 / €25</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Meats-->
+        <div id="cs-menu6-1018" class="cs-menu-group" data-category="six">
+            <!--Meats Section 1-->
+            <section class="cs-menu cs-menu-style2">
+                <div class="cs-content">
+                    <h2 class="cs-title">Livestock Futures</h2>
+                    <p class="cs-text">
+                        Livestock and meat futures including live cattle, feeder cattle, and lean hogs. Critical markets for meat producers, processors, and food service companies.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Size</th>
+                            <th>Month</th>
+                            <th>Tick</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/livestock/live-cattle_contract_specifications.html" target="_blank">Live Cattle</a></td>
+                            <td data-label="Symbol" class="symbol">LE</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">400 pounds</td>
+                            <td data-label="Month">GJMQVZ</td>
+                            <td data-label="Tick" class="tick">0.025 / $10</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/livestock/feeder-cattle_contract_specifications.html" target="_blank">Feeder Cattle</a></td>
+                            <td data-label="Symbol" class="symbol">GF</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">500 pounds</td>
+                            <td data-label="Month">FHJKQUVX</td>
+                            <td data-label="Tick" class="tick">0.025 / $12.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/livestock/lean-hogs_contract_specifications.html" target="_blank">Lean Hogs</a></td>
+                            <td data-label="Symbol" class="symbol">HE</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">400 pounds</td>
+                            <td data-label="Month">GJKMNQVZ</td>
+                            <td data-label="Tick" class="tick">0.025 / $10</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/agricultural/livestock/pork-cutout_contract_specifications.html" target="_blank">Pork Cutout Futures</a></td>
+                            <td data-label="Symbol" class="symbol">PRK</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">400 pounds</td>
+                            <td data-label="Month">GJKMNQVZ</td>
+                            <td data-label="Tick" class="tick">0.025 / $10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Metals-->
+        <div id="cs-menu7-1018" class="cs-menu-group" data-category="seven">
+            <!--Metals Section 1-->
+            <section class="cs-menu">
+                <div class="cs-content">
+                    <h2 class="cs-title">Metal Futures</h2>
+                    <p class="cs-text">
+                        Precious metals (gold, silver, platinum, palladium) and base metals (copper). Popular safe-haven assets and industrial commodity hedging instruments.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Size</th>
+                            <th>Month</th>
+                            <th>Tick</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/gold_contract_specifications.html" target="_blank">Gold</a></td>
+                            <td data-label="Symbol" class="symbol">GGC</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Size">100 ounces</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.1 / $10</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/silver_contract_specifications.html" target="_blank">Silver</a></td>
+                            <td data-label="Symbol" class="symbol">GSI</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Size">5000 ounces</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.005 / $25</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/platinum_contract_specifications.html" target="_blank">Platinum</a></td>
+                            <td data-label="Symbol" class="symbol">GPL</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Size">50 ounces</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.1 / $5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/palladium_contract_specifications.html" target="_blank">Palladium</a></td>
+                            <td data-label="Symbol" class="symbol">GPA</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Size">100 ounces</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.5 / $50</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/base/copper_contract_specifications.html" target="_blank">Copper</a></td>
+                            <td data-label="Symbol" class="symbol">GHG</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Size">25000 pounds</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.0005 / $12.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/e-mini-gold_contract_specifications.html" target="_blank">miNY Gold</a></td>
+                            <td data-label="Symbol" class="symbol">QO</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Size">50 ounces</td>
+                            <td data-label="Month">GJMQVZ</td>
+                            <td data-label="Tick" class="tick">0.25 / $12.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/e-mini-silver_contract_specifications.html" target="_blank">miNY Silver</a></td>
+                            <td data-label="Symbol" class="symbol">QI</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Size">2500 ounces</td>
+                            <td data-label="Month">FHKNUZ</td>
+                            <td data-label="Tick" class="tick">0.0125 / $31.25</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/e-micro-gold_contract_specifications.html" target="_blank">E-micro Gold</a></td>
+                            <td data-label="Symbol" class="symbol">MGC</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Size">10 ounces</td>
+                            <td data-label="Month">GJMQVZ</td>
+                            <td data-label="Tick" class="tick">0.1 / $1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Softs-->
+        <div id="cs-menu8-1018" class="cs-menu-group" data-category="eight">
+            <!--Softs Section 1-->
+            <section class="cs-menu cs-menu-style2">
+                <div class="cs-content">
+                    <h2 class="cs-title">Soft Commodities</h2>
+                    <p class="cs-text">
+                        Agricultural soft commodities including coffee, cocoa, sugar, cotton, and dairy products. Global commodity markets essential for food and beverage industries.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Size</th>
+                            <th>Month</th>
+                            <th>Tick</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/15" target="_blank">Coffee</a></td>
+                            <td data-label="Symbol" class="symbol">KC-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Size">37500 pounds</td>
+                            <td data-label="Month">HKNUZ</td>
+                            <td data-label="Tick" class="tick">0.0005 / $18.75</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/7" target="_blank">Cocoa</a></td>
+                            <td data-label="Symbol" class="symbol">CC-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Size">10 metric tonnes</td>
+                            <td data-label="Month">HKNUZ</td>
+                            <td data-label="Tick" class="tick">1 / $10</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/23" target="_blank">Sugar No. 11</a></td>
+                            <td data-label="Symbol" class="symbol">SB-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Size">112000 pounds</td>
+                            <td data-label="Month">HKNV</td>
+                            <td data-label="Tick" class="tick">0.0001 / $11.2</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/254/Cotton-No-2-Futures" target="_blank">Cotton No.2</a></td>
+                            <td data-label="Symbol" class="symbol">CT-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Size">50000 pounds</td>
+                            <td data-label="Month">HKNVZ</td>
+                            <td data-label="Tick" class="tick">0.0001 / $5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/30" target="_blank">Frozen OJ</a></td>
+                            <td data-label="Symbol" class="symbol">OJ-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Size">15000 15K lbs</td>
+                            <td data-label="Month">FHKNUX</td>
+                            <td data-label="Tick" class="tick">0.0005 / $7.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/dairy/class-iii-milk_contract_specifications.html" target="_blank">Class III Milk</a></td>
+                            <td data-label="Symbol" class="symbol">DA</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">2000 pounds</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.01 / $20</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/markets/agriculture/lumber-and-softs/lumber.contractSpecs.html" target="_blank">Lumber Futures</a></td>
+                            <td data-label="Symbol" class="symbol">LBR</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">27500 board feet</td>
+                            <td data-label="Month">FHKNUX</td>
+                            <td data-label="Tick" class="tick">0.5 / $13750</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/markets/agriculture/dairy/nonfat-dry-milk.contractSpecs.html" target="_blank">Nonfat Dry Milk</a></td>
+                            <td data-label="Symbol" class="symbol">NF</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Size">44000 Pounds</td>
+                            <td data-label="Month">FGHJKMNQUVXZ</td>
+                            <td data-label="Tick" class="tick">0.00025 / $11</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+</div>
+
+<script>
+class CS_MenuFilter {
+    filtersSelector = '.cs-button'
+    menuSelector = '.cs-menu-group'
+    activeClass = 'cs-active'
+    hiddenClass = 'cs-hidden'
+    
+    constructor() {
+        this.$menus = document.querySelectorAll(this.menuSelector)
+        const $filters = document.querySelectorAll(this.filtersSelector)
+        this.onClick($filters[0])
+        for (const $filter of $filters) {
+            $filter.addEventListener('click', () => this.onClick($filter))
+        }
+    }
+    
+    onClick($filter) {
+        this.filter($filter.dataset.filter)
+        const { activeClass } = this
+        this.$activeFilter?.classList.remove(activeClass)
+        $filter.classList.add(activeClass)
+        this.$activeFilter = $filter
+    }
+    
+    filter(filter) {
+        const showAll = filter == 'all'
+        const { hiddenClass } = this
+        for (const $menu of this.$menus) {
+            const show = showAll || $menu.dataset.category == filter
+            $menu.classList.toggle(hiddenClass, !show)
+        }
+    }
+}
+
+new CS_MenuFilter()
+</script>
+
+{% include 'components/cta.html' %}
+
+{% endblock %}

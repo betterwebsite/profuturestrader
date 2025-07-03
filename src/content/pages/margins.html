@@ -1,0 +1,120 @@
+---
+title: 'Margins | ProFuturesTrader'
+description: 'ProFuturesTrader offers transparent, risk-based futures margin requirements—including initial, maintenance, and intraday rates—tailored for both retail and institutional traders.'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'margins/'
+eleventyNavigation:
+    key: Margins
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/automated.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <!-- <section id="int-hero">
+        <h1 id="home-h">Automated Systems</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/automated.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/automated.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/automated.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section> -->
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
+
+<section id="content-page-1399" >
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/stock_crunch.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/stock_crunch.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/stock_crunch.jpg" alt="people" width="542" height="728">
+                </picture>
+                <div class="cs-box">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="gear icon" width="60" height="60">
+                    <span class="cs-desc">
+                        Over 26 Years of Futures Margin Expertise
+                    </span>
+                </div>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/transparency.svg" alt="icon" width="32" height="32">
+                        Transparent Margins
+                    </h3>
+                    <p class="cs-item-text">
+                        Clear initial, maintenance, and intraday requirements across all major futures contracts.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/speedometer.svg" alt="icon" width="32" height="32">
+                        Risk-Based Adjustments
+                    </h3>
+                    <p class="cs-item-text">
+                        Dynamic margin schedules that adapt to market volatility and exchange updates.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title">Margin <span class="cs-color">Requirements</span></h1>
+            <h2>Transparent, Risk-Based Margins</h2>
+            <h3>Flexible Margin Tiers</h3>
+            <h4>Initial, Maintenance &amp; Intraday Explained</h4>
+            <p>
+                At ProFuturesTrader, our margins cover potential one-day price swings while optimizing your capital. We break down initial, maintenance, and intraday requirements for every major futures contract.
+            </p>
+            <p>
+                All margin levels adjust dynamically based on market volatility and exchange clearinghouse rules, with clear notifications if a margin call is required.
+            </p>
+            <h3>Key Benefits</h3>
+            <ol>
+                <li>Covers day-one volatility with exchange-set initial margins.</li>
+                <li>Prevents forced liquidation through maintenance margin thresholds.</li>
+                <li>Offers reduced collateral for same-day trades via intraday margins.</li>
+            </ol>
+            <h4>Sample Margin Rates</h4>
+            <ul>
+                <li>E-mini S&amp;P 500: $12,650 initial / $10,000 maintenance / $50 intraday</li>
+                <li>Crude Oil Futures: $6,500 initial / $5,200 maintenance / $200 intraday</li>
+                <li>Gold Futures: $8,100 initial / $6,500 maintenance / $100 intraday</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+
+                                
+
+                                
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}
