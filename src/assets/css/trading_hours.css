@@ -177,7 +177,7 @@
     position: sticky;
     /* change based on how tall your navigation is above it.  If your navigation is 90px tall, set it to 100px from the top on mobile, and increase the larger value in the clamp to change the desktop value if you need to as well */
     /* 84px - 110px */
-    top: clamp(5.25rem, 8vw, 6.875rem);
+    top: clamp(7rem, 8vw, 7rem);
     z-index: 1000;
   }
   #cs-menu-group-1018 .cs-button {
