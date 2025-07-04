@@ -12,6 +12,8 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/automated.css">
+
+    <link rel="stylesheet" href="/assets/css/trading_hours.css">
 {% endblock %}
 
 {% block body %}
@@ -29,6 +31,956 @@ eleventyNavigation:
 
     </section> -->
 
+
+                  <div id="cs-menu-group-1018">
+    <div class="cs-container">
+        <div class="cs-button-group">
+            <button class="cs-button cs-active" data-filter="one">
+                Currencies
+            </button>
+            <button class="cs-button" data-filter="two">
+                Energies
+            </button>
+            <button class="cs-button" data-filter="three">
+                Financials
+            </button>
+            <button class="cs-button" data-filter="four">
+                Grains
+            </button>
+            <button class="cs-button" data-filter="five">
+                Indices
+            </button>
+            <button class="cs-button" data-filter="six">
+                Meats
+            </button>
+            <button class="cs-button" data-filter="seven">
+                Metals
+            </button>
+            <button class="cs-button" data-filter="eight">
+                Softs
+            </button>
+        </div>
+
+        <!--Currencies-->
+        <div id="cs-menu1-1018" class="cs-menu-group" data-category="one">
+            <!--Currencies Section 1-->
+            <section class="cs-menu">
+                <div class="cs-content">
+                    <h2 class="cs-title">Currency Futures Margins</h2>
+                    <p class="cs-text">
+                        Margin requirements for global currency futures including major pairs, emerging markets, and micro contracts. Initial, maintenance, and day trading margins.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Init. Margin</th>
+                            <th>Maint. Margin</th>
+                            <th>Day</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/australian-dollar_contract_specifications.html" target="_blank">Aussie Dollar</a></td>
+                            <td data-label="Symbol" class="symbol">6A</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 2420</td>
+                            <td data-label="Maint. Margin">$ 2200</td>
+                            <td data-label="Day" class="tick"><strong style="color: red;">$ 2420</strong></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/fx/g10/australian-dollar-japanese-yen_contract_specifications.html" target="_blank">Australian Dollar/Japanese Yen</a></td>
+                            <td data-label="Symbol" class="symbol">AJY</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">¥ 990000</td>
+                            <td data-label="Maint. Margin">¥ 900000</td>
+                            <td data-label="Day" class="tick">¥990000</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/emerging-market/brazilian-real_contract_specifications.html" target="_blank">Brazilian Real</a></td>
+                            <td data-label="Symbol" class="symbol">6L</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 1375</td>
+                            <td data-label="Maint. Margin">$ 1250</td>
+                            <td data-label="Day" class="tick">$1375</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/british-pound_contract_specifications.html" target="_blank">British Pound</a></td>
+                            <td data-label="Symbol" class="symbol">6B</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 2420</td>
+                            <td data-label="Maint. Margin">$ 2200</td>
+                            <td data-label="Day" class="tick"><strong style="color: red;">$ 1210</strong></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/british-pound-japanese-yen_contract_specifications.html" target="_blank">British Pound/Japanese Yen</a></td>
+                            <td data-label="Symbol" class="symbol">PJY</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">¥ 880000</td>
+                            <td data-label="Maint. Margin">¥ 800000</td>
+                            <td data-label="Day" class="tick">¥880000</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/canadian-dollar_contract_specifications.html" target="_blank">Canadian Dollar</a></td>
+                            <td data-label="Symbol" class="symbol">6C</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 1485</td>
+                            <td data-label="Maint. Margin">$ 1350</td>
+                            <td data-label="Day" class="tick"><strong style="color: red;">$ 1485</strong></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/e-mini-euro-fx_contract_specifications.html" target="_blank">E-Mini Euro FX</a></td>
+                            <td data-label="Symbol" class="symbol">E7</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 1870</td>
+                            <td data-label="Maint. Margin">$ 1700</td>
+                            <td data-label="Day" class="tick">$1870</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/e-mini-japanese-yen_contract_specifications.html" target="_blank">E-mini Japanese Yen</a></td>
+                            <td data-label="Symbol" class="symbol">J7</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 2090</td>
+                            <td data-label="Maint. Margin">$ 1900</td>
+                            <td data-label="Day" class="tick">$2090</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/euro-fx_contract_specifications.html" target="_blank">Euro FX</a></td>
+                            <td data-label="Symbol" class="symbol">6E</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 3740</td>
+                            <td data-label="Maint. Margin">$ 3400</td>
+                            <td data-label="Day" class="tick"><strong style="color: red;">$ 1870</strong></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/euro-fx-british-pound_contract_specifications.html" target="_blank">Euro/British Pound</a></td>
+                            <td data-label="Symbol" class="symbol">RP</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">£ 2200</td>
+                            <td data-label="Maint. Margin">£ 2000</td>
+                            <td data-label="Day" class="tick">£2200</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/euro-fx-japanese-yen_contract_specifications.html" target="_blank">Euro/Japanese Yen</a></td>
+                            <td data-label="Symbol" class="symbol">RY</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">¥ 660000</td>
+                            <td data-label="Maint. Margin">¥ 600000</td>
+                            <td data-label="Day" class="tick">¥660000</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/euro-fx-swiss-franc_contract_specifications.html" target="_blank">Euro/Swiss Franc</a></td>
+                            <td data-label="Symbol" class="symbol">RF</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">CHF 2750</td>
+                            <td data-label="Maint. Margin">CHF 2500</td>
+                            <td data-label="Day" class="tick">CHF2750</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/emerging-market/indian-rupee_contract_specifications.html" target="_blank">Indian Rupee/USD</a></td>
+                            <td data-label="Symbol" class="symbol">SIR</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 968</td>
+                            <td data-label="Maint. Margin">$ 880</td>
+                            <td data-label="Day" class="tick">$968</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/japanese-yen_contract_specifications.html" target="_blank">Japanese Yen</a></td>
+                            <td data-label="Symbol" class="symbol">6J</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 4180</td>
+                            <td data-label="Maint. Margin">$ 3800</td>
+                            <td data-label="Day" class="tick"><strong style="color: red;">$ 2090</strong></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/emerging-market/korean-won_contract_specifications.html" target="_blank">Korean Won</a></td>
+                            <td data-label="Symbol" class="symbol">KRW</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 4180</td>
+                            <td data-label="Maint. Margin">$ 3800</td>
+                            <td data-label="Day" class="tick">$4180</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/emerging-market/mexican-peso_contract_specifications.html" target="_blank">Mexican Peso</a></td>
+                            <td data-label="Symbol" class="symbol">6M</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 1760</td>
+                            <td data-label="Maint. Margin">$ 1600</td>
+                            <td data-label="Day" class="tick">$1760</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/e-micros/e-micro-australian-dollar_contract_specifications.html" target="_blank">Micro AUD/USD</a></td>
+                            <td data-label="Symbol" class="symbol">M6A</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 242</td>
+                            <td data-label="Maint. Margin">$ 220</td>
+                            <td data-label="Day" class="tick">$242</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/markets/fx/g10/e-micro-canadian-dollar-us-dollar.contractSpecs.html" target="_blank">Micro CAD/USD</a></td>
+                            <td data-label="Symbol" class="symbol">MCD</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 148</td>
+                            <td data-label="Maint. Margin">$ 135</td>
+                            <td data-label="Day" class="tick">$148</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/markets/fx/g10/e-micro-swiss-franc-us-dollar.contractSpecs.html" target="_blank">Micro CHF/USD</a></td>
+                            <td data-label="Symbol" class="symbol">MSF</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 594</td>
+                            <td data-label="Maint. Margin">$ 540</td>
+                            <td data-label="Day" class="tick">$594</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/e-micros/e-micro-euro_contract_specifications.html" target="_blank">Micro EUR/USD</a></td>
+                            <td data-label="Symbol" class="symbol">M6E</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 374</td>
+                            <td data-label="Maint. Margin">$ 340</td>
+                            <td data-label="Day" class="tick">$374</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/e-micros/e-micro-british-pound_contract_specifications.html" target="_blank">Micro GBP/USD</a></td>
+                            <td data-label="Symbol" class="symbol">M6B</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 242</td>
+                            <td data-label="Maint. Margin">$ 220</td>
+                            <td data-label="Day" class="tick">$242</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/e-micros/e-micro-indian-rupee_contract_specifications.html" target="_blank">Micro INR/USD</a></td>
+                            <td data-label="Symbol" class="symbol">MIR</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 194</td>
+                            <td data-label="Maint. Margin">$ 176</td>
+                            <td data-label="Day" class="tick">$194</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/new-zealand-dollar_contract_specifications.html" target="_blank">New Zealand Dollar</a></td>
+                            <td data-label="Symbol" class="symbol">6N</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 1870</td>
+                            <td data-label="Maint. Margin">$ 1700</td>
+                            <td data-label="Day" class="tick">$1870</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/fx/emerging-market/russian-ruble_contract_specifications.html" target="_blank">Russian Ruble</a></td>
+                            <td data-label="Symbol" class="symbol">6R</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 0</td>
+                            <td data-label="Maint. Margin">$ 0</td>
+                            <td data-label="Day" class="tick">$0</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/emerging-market/south-african-rand_contract_specifications.html" target="_blank">South African Rand</a></td>
+                            <td data-label="Symbol" class="symbol">6Z</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 1540</td>
+                            <td data-label="Maint. Margin">$ 1400</td>
+                            <td data-label="Day" class="tick">$1540</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/swedish-krona_contract_specifications.html" target="_blank">Swedish Krona</a></td>
+                            <td data-label="Symbol" class="symbol">SEK</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 9020</td>
+                            <td data-label="Maint. Margin">$ 8200</td>
+                            <td data-label="Day" class="tick">$9020</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/fx/g10/swiss-franc_contract_specifications.html" target="_blank">Swiss Franc</a></td>
+                            <td data-label="Symbol" class="symbol">6S</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 5940</td>
+                            <td data-label="Maint. Margin">$ 5400</td>
+                            <td data-label="Day" class="tick"><strong style="color: red;">$ 5940</strong></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/194" target="_blank">US Dollar Index</a></td>
+                            <td data-label="Symbol" class="symbol">DX-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Init. Margin">$ 2090</td>
+                            <td data-label="Maint. Margin">$ 1900</td>
+                            <td data-label="Day" class="tick">$</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Energies-->
+        <div id="cs-menu2-1018" class="cs-menu-group" data-category="two">
+            <!--Energies Section 1-->
+            <section class="cs-menu cs-menu-style2">
+                <div class="cs-content">
+                    <h2 class="cs-title">Energy Futures Margins</h2>
+                    <p class="cs-text">
+                        Margin requirements for crude oil, natural gas, heating oil, gasoline and other energy products. Energy markets require substantial margins due to volatility.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Init. Margin</th>
+                            <th>Maint. Margin</th>
+                            <th>Day</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/crude-oil/brent-crude-oil-last-day_contract_specifications.html" target="_blank">Brent Last Day Financial</a></td>
+                            <td data-label="Symbol" class="symbol">BZ</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Init. Margin">$ 5170</td>
+                            <td data-label="Maint. Margin">$ 4700</td>
+                            <td data-label="Day" class="tick">$5170</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/crude-oil/light-sweet-crude_contract_specifications.html" target="_blank">Crude Oil</a></td>
+                            <td data-label="Symbol" class="symbol">GCL</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Init. Margin">$ 5720</td>
+                            <td data-label="Maint. Margin">$ 5200</td>
+                            <td data-label="Day" class="tick">$3630</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/crude-oil/emini-crude-oil_contract_specifications.html" target="_blank">E-mini Crude Oil</a></td>
+                            <td data-label="Symbol" class="symbol">QM</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Init. Margin">$ 2860</td>
+                            <td data-label="Maint. Margin">$ 2600</td>
+                            <td data-label="Day" class="tick">$1430</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/markets/energy/crude-oil/micro-wti-crude-oil.contractSpecs.html" target="_blank">Micro Crude Oil</a></td>
+                            <td data-label="Symbol" class="symbol">MCL</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Init. Margin">$ 572</td>
+                            <td data-label="Maint. Margin">$ 520</td>
+                            <td data-label="Day" class="tick">$286</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/natural-gas/natural-gas_contract_specifications.html" target="_blank">HH Natural Gas</a></td>
+                            <td data-label="Symbol" class="symbol">GNG</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Init. Margin">$ 6050</td>
+                            <td data-label="Maint. Margin">$ 5500</td>
+                            <td data-label="Day" class="tick">$6050</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/natural-gas/emini-natural-gas_contract_specifications.html" target="_blank">Natural Gas miNY</a></td>
+                            <td data-label="Symbol" class="symbol">QG</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Init. Margin">$ 1512</td>
+                            <td data-label="Maint. Margin">$ 1375</td>
+                            <td data-label="Day" class="tick">$1512</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/refined-products/heating-oil_contract_specifications.html" target="_blank">Heating Oil</a></td>
+                            <td data-label="Symbol" class="symbol">GHO</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Init. Margin">$ 6820</td>
+                            <td data-label="Maint. Margin">$ 6200</td>
+                            <td data-label="Day" class="tick">$6820</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/energy/refined-products/rbob-gasoline_contract_specifications.html" target="_blank">RBOB Gasoline</a></td>
+                            <td data-label="Symbol" class="symbol">GRB</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Init. Margin">$ 6050</td>
+                            <td data-label="Maint. Margin">$ 5500</td>
+                            <td data-label="Day" class="tick">$6050</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.ice.com/products/219/Brent-Crude-Futures" target="_blank">ICE Brent Crude</a></td>
+                            <td data-label="Symbol" class="symbol">NSEA-M</td>
+                            <td data-label="Exchange" class="exchange">ICEEU</td>
+                            <td data-label="Init. Margin">$ 7282</td>
+                            <td data-label="Maint. Margin">$ 6620</td>
+                            <td data-label="Day" class="tick">$</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Financials-->
+        <div id="cs-menu3-1018" class="cs-menu-group" data-category="three">
+            <!--Financials Section 1-->
+            <section class="cs-menu">
+                <div class="cs-content">
+                    <h2 class="cs-title">Financial Futures Margins</h2>
+                    <p class="cs-text">
+                        Margin requirements for interest rate futures including Treasury bonds, notes, and bills. SOFR futures and international government bonds margin specifications.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Init. Margin</th>
+                            <th>Maint. Margin</th>
+                            <th>Day</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/us-treasury/2-year-us-treasury-note_contract_specifications.html" target="_blank">2 Yr US T-Note</a></td>
+                            <td data-label="Symbol" class="symbol">ZT</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Init. Margin">$ 1320</td>
+                            <td data-label="Maint. Margin">$ 1200</td>
+                            <td data-label="Day" class="tick">$660</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/us-treasury/5-year-us-treasury-note_contract_specifications.html" target="_blank">5 Yr T-Note</a></td>
+                            <td data-label="Symbol" class="symbol">ZF</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Init. Margin">$ 1375</td>
+                            <td data-label="Maint. Margin">$ 1250</td>
+                            <td data-label="Day" class="tick">$687.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/us-treasury/10-year-us-treasury-note_contract_specifications.html" target="_blank">10 Yr US T-Note</a></td>
+                            <td data-label="Symbol" class="symbol">ZN</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Init. Margin">$ 2062</td>
+                            <td data-label="Maint. Margin">$ 1875</td>
+                            <td data-label="Day" class="tick">$1031</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/us-treasury/30-year-us-treasury-bond_contract_specifications.html" target="_blank">30 Yr US T-Bonds</a></td>
+                            <td data-label="Symbol" class="symbol">ZB</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Init. Margin">$ 4070</td>
+                            <td data-label="Maint. Margin">$ 3700</td>
+                            <td data-label="Day" class="tick">$2035</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/us-treasury/ultra-10-year-us-treasury-note_contract_specifications.html" target="_blank">Ultra 10-Year Note</a></td>
+                            <td data-label="Symbol" class="symbol">TN</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Init. Margin">$ 2805</td>
+                            <td data-label="Maint. Margin">$ 2550</td>
+                            <td data-label="Day" class="tick">$2805</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/interest-rates/us-treasury/ultra-t-bond_contract_specifications.html" target="_blank">Ultra T-Bond</a></td>
+                            <td data-label="Symbol" class="symbol">UB</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Init. Margin">$ 5665</td>
+                            <td data-label="Maint. Margin">$ 5150</td>
+                            <td data-label="Day" class="tick">$5665</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.eurex.com/ex-en/markets/int/fix/government-bonds/Euro-Bund-Futures-137298" target="_blank">EuroBund</a></td>
+                            <td data-label="Symbol" class="symbol">FGBL</td>
+                            <td data-label="Exchange" class="exchange">EUREX</td>
+                            <td data-label="Init. Margin">€ 3199</td>
+                            <td data-label="Maint. Margin">€ 3199</td>
+                            <td data-label="Day" class="tick">€</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/interest-rates/stir/three-month-sofr_contract_specifications.html" target="_blank">Three-Month SOFR</a></td>
+                            <td data-label="Symbol" class="symbol">SR3</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 908</td>
+                            <td data-label="Maint. Margin">$ 825</td>
+                            <td data-label="Day" class="tick">$908</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Grains-->
+        <div id="cs-menu4-1018" class="cs-menu-group" data-category="four">
+            <!--Grains Section 1-->
+            <section class="cs-menu cs-menu-style2">
+                <div class="cs-content">
+                    <h2 class="cs-title">Grain & Oilseed Futures Margins</h2>
+                    <p class="cs-text">
+                        Margin requirements for agricultural futures including corn, soybeans, wheat, and related products. Essential information for agricultural commodity traders.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Init. Margin</th>
+                            <th>Maint. Margin</th>
+                            <th>Day</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/grain-and-oilseed/corn_contract_specifications.html" target="_blank">Corn</a></td>
+                            <td data-label="Symbol" class="symbol">ZC</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Init. Margin">$ 1155</td>
+                            <td data-label="Maint. Margin">$ 1050</td>
+                            <td data-label="Day" class="tick">$577.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/grain-and-oilseed/soybean_contract_specifications.html" target="_blank">Soybeans</a></td>
+                            <td data-label="Symbol" class="symbol">ZS</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Init. Margin">$ 2365</td>
+                            <td data-label="Maint. Margin">$ 2150</td>
+                            <td data-label="Day" class="tick">$1182.5</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/grain-and-oilseed/wheat_contract_specifications.html" target="_blank">Wheat</a></td>
+                            <td data-label="Symbol" class="symbol">ZW</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Init. Margin">$ 1815</td>
+                            <td data-label="Maint. Margin">$ 1650</td>
+                            <td data-label="Day" class="tick">$</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/grain-and-oilseed/soybean-oil_contract_specifications.html" target="_blank">Soybean Oil</a></td>
+                            <td data-label="Symbol" class="symbol">ZL</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Init. Margin">$ 2310</td>
+                            <td data-label="Maint. Margin">$ 2100</td>
+                            <td data-label="Day" class="tick">$1155</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/agricultural/grain-and-oilseed/soybean-meal_contract_specifications.html" target="_blank">Soymeal</a></td>
+                            <td data-label="Symbol" class="symbol">ZM</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Init. Margin">$ 1870</td>
+                            <td data-label="Maint. Margin">$ 1700</td>
+                            <td data-label="Day" class="tick">$935</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/grain-and-oilseed/oats_contract_specifications.html" target="_blank">Oats</a></td>
+                            <td data-label="Symbol" class="symbol">ZO</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Init. Margin">$ 1375</td>
+                            <td data-label="Maint. Margin">$ 1250</td>
+                            <td data-label="Day" class="tick">$1375</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/agricultural/grain-and-oilseed/rough-rice_contract_specifications.html" target="_blank">Rough Rice</a></td>
+                            <td data-label="Symbol" class="symbol">ZR</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Init. Margin">$ 1540</td>
+                            <td data-label="Maint. Margin">$ 1400</td>
+                            <td data-label="Day" class="tick">$1540</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/markets/agriculture/grains/micro-corn.contractSpecs.html" target="_blank">Micro Corn</a></td>
+                            <td data-label="Symbol" class="symbol">MZC</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Init. Margin">$ 110</td>
+                            <td data-label="Maint. Margin">$ 100</td>
+                            <td data-label="Day" class="tick">$110</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Indices-->
+        <div id="cs-menu5-1018" class="cs-menu-group" data-category="five">
+            <!--Indices Section 1-->
+            <section class="cs-menu">
+                <div class="cs-content">
+                    <h2 class="cs-title">Index Futures Margins</h2>
+                    <p class="cs-text">
+                        Margin requirements for stock index futures including S&P 500, NASDAQ, Dow Jones, and international indices. Critical information for equity index traders.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Init. Margin</th>
+                            <th>Maint. Margin</th>
+                            <th>Day</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/equity-index/us-index/e-mini-sandp500_contract_specifications.html" target="_blank">E-Mini S&P 500</a></td>
+                            <td data-label="Symbol" class="symbol">ES</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 16060</td>
+                            <td data-label="Maint. Margin">$ 14600</td>
+                            <td data-label="Day" class="tick"><strong style="color: red;">$ 803</strong></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/equity-index/us-index/e-mini-nasdaq-100_contract_specifications.html" target="_blank">E-Mini NASDAQ 100</a></td>
+                            <td data-label="Symbol" class="symbol">NQ</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 24420</td>
+                            <td data-label="Maint. Margin">$ 22200</td>
+                            <td data-label="Day" class="tick"><strong style="color: red;">$ 1221</strong></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/equity-index/us-index/e-mini-dow_contract_specifications.html" target="_blank">E-Mini Dow</a></td>
+                            <td data-label="Symbol" class="symbol">YM</td>
+                            <td data-label="Exchange" class="exchange">CBOT</td>
+                            <td data-label="Init. Margin">$ 11440</td>
+                            <td data-label="Maint. Margin">$ 10400</td>
+                            <td data-label="Day" class="tick"><strong style="color: red;">$ 750</strong></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/equity-index/us-index/e-mini-russell-2000_contract_specifications.html" target="_blank">E-mini Russell 2000</a></td>
+                            <td data-label="Symbol" class="symbol">RTY</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 8360</td>
+                            <td data-label="Maint. Margin">$ 7600</td>
+                            <td data-label="Day" class="tick">$750</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/equity-index/us-index/micro-e-mini-sandp-500_contract_specifications.html" target="_blank">Micro E-mini S&P 500</a></td>
+                            <td data-label="Symbol" class="symbol">MES</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 1606</td>
+                            <td data-label="Maint. Margin">$ 1460</td>
+                            <td data-label="Day" class="tick">$80.3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/equity-index/us-index/micro-e-mini-nasdaq-100_contract_specifications.html" target="_blank">Micro E-mini Nasdaq-100</a></td>
+                            <td data-label="Symbol" class="symbol">MNQ</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 2442</td>
+                            <td data-label="Maint. Margin">$ 2220</td>
+                            <td data-label="Day" class="tick">$122.1</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/equity-index/us-index/bitcoin_contract_specifications.html" target="_blank">CME Bitcoin Futures</a></td>
+                            <td data-label="Symbol" class="symbol">BTC</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 152548</td>
+                            <td data-label="Maint. Margin">$ 138680</td>
+                            <td data-label="Day" class="tick">$</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/equity-index/us-index/ether_contract_specifications.html" target="_blank">CME Ether Futures</a></td>
+                            <td data-label="Symbol" class="symbol">ETH</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 47377</td>
+                            <td data-label="Maint. Margin">$ 43070</td>
+                            <td data-label="Day" class="tick">$</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cboe.com/tradable_products/vix/vix_futures/" target="_blank">CBOE Volatility Index</a></td>
+                            <td data-label="Symbol" class="symbol">VX</td>
+                            <td data-label="Exchange" class="exchange">CFE</td>
+                            <td data-label="Init. Margin">$ 8140</td>
+                            <td data-label="Maint. Margin">$ 7400</td>
+                            <td data-label="Day" class="tick">$</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.eurex.com/ex-en/markets/idx/dax/DAX-Futures-139902" target="_blank">DAX</a></td>
+                            <td data-label="Symbol" class="symbol">FDAX</td>
+                            <td data-label="Exchange" class="exchange">EUREX</td>
+                            <td data-label="Init. Margin">€ 30994</td>
+                            <td data-label="Maint. Margin">€ 30994</td>
+                            <td data-label="Day" class="tick"><strong style="color: red;">€ </strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Meats-->
+        <div id="cs-menu6-1018" class="cs-menu-group" data-category="six">
+            <!--Meats Section 1-->
+            <section class="cs-menu cs-menu-style2">
+                <div class="cs-content">
+                    <h2 class="cs-title">Livestock Futures Margins</h2>
+                    <p class="cs-text">
+                        Margin requirements for livestock and meat futures including live cattle, feeder cattle, and lean hogs. Essential information for livestock traders.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Init. Margin</th>
+                            <th>Maint. Margin</th>
+                            <th>Day</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/livestock/live-cattle_contract_specifications.html" target="_blank">Live Cattle</a></td>
+                            <td data-label="Symbol" class="symbol">LE</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 3025</td>
+                            <td data-label="Maint. Margin">$ 2750</td>
+                            <td data-label="Day" class="tick">$3025</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/livestock/feeder-cattle_contract_specifications.html" target="_blank">Feeder Cattle</a></td>
+                            <td data-label="Symbol" class="symbol">GF</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 4538</td>
+                            <td data-label="Maint. Margin">$ 4125</td>
+                            <td data-label="Day" class="tick">$4538</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/livestock/lean-hogs_contract_specifications.html" target="_blank">Lean Hogs</a></td>
+                            <td data-label="Symbol" class="symbol">HE</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 2035</td>
+                            <td data-label="Maint. Margin">$ 1850</td>
+                            <td data-label="Day" class="tick">$2035</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/trading/agricultural/livestock/pork-cutout_contract_specifications.html" target="_blank">Pork Cutout Futures</a></td>
+                            <td data-label="Symbol" class="symbol">PRK</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 2310</td>
+                            <td data-label="Maint. Margin">$ 2100</td>
+                            <td data-label="Day" class="tick">$2090</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Metals-->
+        <div id="cs-menu7-1018" class="cs-menu-group" data-category="seven">
+            <!--Metals Section 1-->
+            <section class="cs-menu">
+                <div class="cs-content">
+                    <h2 class="cs-title">Metal Futures Margins</h2>
+                    <p class="cs-text">
+                        Margin requirements for precious metals (gold, silver, platinum, palladium) and base metals (copper). Key information for metal futures traders.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Init. Margin</th>
+                            <th>Maint. Margin</th>
+                            <th>Day</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/gold_contract_specifications.html" target="_blank">Gold</a></td>
+                            <td data-label="Symbol" class="symbol">GGC</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Init. Margin">$ 16500</td>
+                            <td data-label="Maint. Margin">$ 15000</td>
+                            <td data-label="Day" class="tick">$8250</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/silver_contract_specifications.html" target="_blank">Silver</a></td>
+                            <td data-label="Symbol" class="symbol">GSI</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Init. Margin">$ 16500</td>
+                            <td data-label="Maint. Margin">$ 15000</td>
+                            <td data-label="Day" class="tick">$</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/platinum_contract_specifications.html" target="_blank">Platinum</a></td>
+                            <td data-label="Symbol" class="symbol">GPL</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Init. Margin">$ 5500</td>
+                            <td data-label="Maint. Margin">$ 5000</td>
+                            <td data-label="Day" class="tick">$5500</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/palladium_contract_specifications.html" target="_blank">Palladium</a></td>
+                            <td data-label="Symbol" class="symbol">GPA</td>
+                            <td data-label="Exchange" class="exchange">NYMEX</td>
+                            <td data-label="Init. Margin">$ 13750</td>
+                            <td data-label="Maint. Margin">$ 12500</td>
+                            <td data-label="Day" class="tick">$13750</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/base/copper_contract_specifications.html" target="_blank">Copper</a></td>
+                            <td data-label="Symbol" class="symbol">GHG</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Init. Margin">$ 9900</td>
+                            <td data-label="Maint. Margin">$ 9000</td>
+                            <td data-label="Day" class="tick">$9900</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/e-mini-gold_contract_specifications.html" target="_blank">miNY Gold</a></td>
+                            <td data-label="Symbol" class="symbol">QO</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Init. Margin">$ 8250</td>
+                            <td data-label="Maint. Margin">$ 7500</td>
+                            <td data-label="Day" class="tick">$8250</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/e-mini-silver_contract_specifications.html" target="_blank">miNY Silver</a></td>
+                            <td data-label="Symbol" class="symbol">QI</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Init. Margin">$ 8250</td>
+                            <td data-label="Maint. Margin">$ 7500</td>
+                            <td data-label="Day" class="tick">$</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/metals/precious/e-micro-gold_contract_specifications.html" target="_blank">E-micro Gold</a></td>
+                            <td data-label="Symbol" class="symbol">MGC</td>
+                            <td data-label="Exchange" class="exchange">COMEX</td>
+                            <td data-label="Init. Margin">$ 1650</td>
+                            <td data-label="Maint. Margin">$ 1500</td>
+                            <td data-label="Day" class="tick">$1650</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!--Softs-->
+        <div id="cs-menu8-1018" class="cs-menu-group" data-category="eight">
+            <!--Softs Section 1-->
+            <section class="cs-menu cs-menu-style2">
+                <div class="cs-content">
+                    <h2 class="cs-title">Soft Commodities Margins</h2>
+                    <p class="cs-text">
+                        Margin requirements for agricultural soft commodities including coffee, cocoa, sugar, cotton, and dairy products. Essential for soft commodity traders.
+                    </p>
+                </div>
+                <table class="trading-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Symbol</th>
+                            <th>Exchange</th>
+                            <th>Init. Margin</th>
+                            <th>Maint. Margin</th>
+                            <th>Day</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/15" target="_blank">Coffee</a></td>
+                            <td data-label="Symbol" class="symbol">KC-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Init. Margin">$ 9900</td>
+                            <td data-label="Maint. Margin">$ 9000</td>
+                            <td data-label="Day" class="tick">$</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/7" target="_blank">Cocoa</a></td>
+                            <td data-label="Symbol" class="symbol">CC-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Init. Margin">$ 1573</td>
+                            <td data-label="Maint. Margin">$ 1430</td>
+                            <td data-label="Day" class="tick">$</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/23" target="_blank">Sugar No. 11</a></td>
+                            <td data-label="Symbol" class="symbol">SB-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Init. Margin">$ 2218</td>
+                            <td data-label="Maint. Margin">$ 2016</td>
+                            <td data-label="Day" class="tick">$</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/254/Cotton-No-2-Futures" target="_blank">Cotton No.2</a></td>
+                            <td data-label="Symbol" class="symbol">CT-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Init. Margin">$ 4950</td>
+                            <td data-label="Maint. Margin">$ 4500</td>
+                            <td data-label="Day" class="tick">$4950</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.theice.com/products/30" target="_blank">Frozen OJ</a></td>
+                            <td data-label="Symbol" class="symbol">OJ-M</td>
+                            <td data-label="Exchange" class="exchange">ICEUS</td>
+                            <td data-label="Init. Margin">$ 2970</td>
+                            <td data-label="Maint. Margin">$ 2700</td>
+                            <td data-label="Day" class="tick">$</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="http://www.cmegroup.com/trading/agricultural/dairy/class-iii-milk_contract_specifications.html" target="_blank">Class III Milk</a></td>
+                            <td data-label="Symbol" class="symbol">DA</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 1870</td>
+                            <td data-label="Maint. Margin">$ 1700</td>
+                            <td data-label="Day" class="tick">$1870</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/markets/agriculture/lumber-and-softs/lumber.contractSpecs.html" target="_blank">Lumber Futures</a></td>
+                            <td data-label="Symbol" class="symbol">LBR</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 1210</td>
+                            <td data-label="Maint. Margin">$ 1100</td>
+                            <td data-label="Day" class="tick">$1210</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name"><a href="https://www.cmegroup.com/markets/agriculture/dairy/nonfat-dry-milk.contractSpecs.html" target="_blank">Nonfat Dry Milk</a></td>
+                            <td data-label="Symbol" class="symbol">NF</td>
+                            <td data-label="Exchange" class="exchange">CME</td>
+                            <td data-label="Init. Margin">$ 2090</td>
+                            <td data-label="Maint. Margin">$ 1900</td>
+                            <td data-label="Day" class="tick">$2090</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+</div>
+
+<script>
+class CS_MenuFilter {
+    filtersSelector = '.cs-button'
+    menuSelector = '.cs-menu-group'
+    activeClass = 'cs-active'
+    hiddenClass = 'cs-hidden'
+    
+    constructor() {
+        this.$menus = document.querySelectorAll(this.menuSelector)
+        const $filters = document.querySelectorAll(this.filtersSelector)
+        this.onClick($filters[0])
+        for (const $filter of $filters) {
+            $filter.addEventListener('click', () => this.onClick($filter))
+        }
+    }
+    
+    onClick($filter) {
+        this.filter($filter.dataset.filter)
+        const { activeClass } = this
+        this.$activeFilter?.classList.remove(activeClass)
+        $filter.classList.add(activeClass)
+        this.$activeFilter = $filter
+    }
+    
+    filter(filter) {
+        const showAll = filter == 'all'
+        const { hiddenClass } = this
+        for (const $menu of this.$menus) {
+            const show = showAll || $menu.dataset.category == filter
+            $menu.classList.toggle(hiddenClass, !show)
+        }
+    }
+}
+
+new CS_MenuFilter()
+</script>              
+
+           
 <!-- ============================================ -->
 <!--                 Content Page                 -->
 <!-- ============================================ -->
@@ -109,11 +1061,7 @@ eleventyNavigation:
     </div>
     <div class="cs-bubbles" aria-hidden="true"></div>
 </section>
-
-
-                                
-
-                                
+                     
 
     {% include 'components/cta.html' %}
 
